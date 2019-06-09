@@ -6,14 +6,16 @@
 
 html,
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Hind Guntur', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: #dcdde1;
+    word-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 section {
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 h2 {
@@ -35,8 +37,8 @@ h3:after {
     background-color: #c23616;
     content: " ";
     width: 100px;
-    height: 2px;
-    margin: 10px auto;
+    height: 4px;
+    margin: 5px auto;
 }
 
 h4 {
@@ -69,13 +71,14 @@ a:link,
 a:visited {
     text-decoration: none;
     color: #dcdde1;
-    transition: border-bottom 0.2s, color 0.2s;
-    padding-bottom: 2px;
+    transition: border-bottom 0.2s;
+    padding-bottom: 0px;
 }
 
 a:hover,
 a:active {
     border-bottom: 1px solid #c23616;
+    transition: border-bottom 0.3s;
 }
 
 header {
@@ -148,7 +151,7 @@ ul#main-nav li {
     content: ' ';
     background-color: #c23616;
     height: 3px;
-    margin-top: 10px;
+    margin-top: 3px;
     width: 20px;
     display: block;
 }
@@ -167,7 +170,18 @@ ul#main-nav li {
     padding-left: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+    .education .timeline li.content {
+        padding-left: 20px;
+    }
+}
 /* Career Section */
+.company-description{
+    color: #c23616;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
 .career {
     color: #7a7a7a;
 }
@@ -185,16 +199,17 @@ ul#main-nav li {
 }
 
 .career .timeline li .timestamp::after {
-    content: ' ';
-    background-color: #c23616;
-    height: 3px;
-    margin:10px 0 0 auto;
-    width: 20px;
-    display: block;
+    margin:3px 0 0 auto;
 }
 
 .career .timeline .content {
     padding-right: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .career .timeline li.content {
+        padding-right: 20px;
+    }
 }
 
 /* Technologies section */
@@ -234,4 +249,28 @@ ul#main-nav li {
 
 .tech-name {
     padding-top: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .span-1-of-3 {
+        width: 100%;
+    }
+}
+
+
+/* Awards and achievements section */
+.awards-section {
+    color: #7a7a7a;
+}
+
+
+/* Certifications Section */
+.certification-section{
+    color: #7a7a7a;
+    background-color: #ececec;
+}
+
+/* Languages Section */
+.language-section{
+    color: #7a7a7a;
 }
