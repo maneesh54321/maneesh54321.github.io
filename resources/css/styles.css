@@ -71,14 +71,15 @@ a:link,
 a:visited {
     text-decoration: none;
     color: #dcdde1;
-    transition: border-bottom 0.2s;
-    padding-bottom: 0px;
+    transition: all 0.2s;
+    padding-bottom: 0;
 }
 
 a:hover,
 a:active {
     border-bottom: 1px solid #c23616;
-    transition: border-bottom 0.3s;
+    transition: all 0.3s;
+    color: #c23616;
 }
 
 header {
@@ -114,7 +115,7 @@ ul#main-nav li {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px 20px;
-    box-shadow: 0px 0px 6px 4px black;
+    box-shadow: 0 0 6px 4px black;
 }
 
 .greeting:after {
@@ -158,8 +159,13 @@ ul#main-nav li {
 
 /* Education Section */
 .education {
-    color: #7a7a7a;
+    color: #dcdde1;
     background-color: #ececec;
+    background-image: linear-gradient(45deg,rgba(25, 42, 86, 1), rgba(25, 42, 86, 0.75)), url("./img/education-studying-university-ic.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .education .timeline li {
